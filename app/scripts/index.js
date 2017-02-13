@@ -6,6 +6,10 @@ var models = require('./models/like.js');
 var likeButton = new models.Likes();
 
 likeButton.updateDisplay();
+// 
+// likeButton.on('event', function(){
+//   console.log('I have changed');
+// })
 
 $('.btn').on('click', function(){
     likeButton.clickCount();
